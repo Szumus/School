@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Headrer from './components/Headrer'
+import Hero from './components/Hero'
+import Products from './components/Products'
+import './index.css'
 
-function App() {
+const App = ({iteam}) => {
+  console.log(iteam);
+  
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div >
+    <Headrer newLogo="Fake Store"/>
+    <Hero/> <br/>
+    <Products/>
+
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
